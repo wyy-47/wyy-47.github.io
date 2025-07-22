@@ -1,0 +1,133 @@
+.mobile-social-footer {
+    display: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+    
+    .name {
+        font-size: 1.5rem;
+    }
+    
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .intro h2 {
+        font-size: 2rem;
+    }
+    
+    .sidebar-nav {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sidebar-nav ul {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    
+    .sidebar-nav li {
+        margin-bottom: 0;
+    }
+    
+    .sidebar-nav a {
+        border-left: none;
+        border-bottom: 2px solid transparent;
+        padding: 10px 5px;
+    }
+    
+    .sidebar-nav a:hover,
+    .sidebar-nav a.active {
+        border-left: none;
+        border-bottom-color: #007bff;
+    }
+
+    /* Dynamic border change for climbing link on mobile */
+    .sidebar-nav a.nav-climbing {
+        margin-top: 0;
+        margin-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        border-top: none;
+        border-left: 2px solid #e0e0e0;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .highlights {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Social links mobile adjustments */
+    .sidebar .social-links {
+        display: none;
+    }
+    
+    /* Mobile footer social links */
+    .mobile-social-footer {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding: 30px 20px;
+        margin-top: 40px;
+        border-top: 1px solid #e0e0e0;
+    }
+    
+    .mobile-social-footer .social-link {
+        padding: 8px;
+        color: #666;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .mobile-social-footer .social-link:hover {
+        color: #007bff;
+    }
+    
+    .mobile-social-footer .social-link svg {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 512px) {
+    .profile-section {
+        margin-bottom: 20px;
+    }
+    
+    .sidebar-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .content-area {
+        padding: 0 10px;
+    }
+}

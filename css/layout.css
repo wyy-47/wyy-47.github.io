@@ -1,0 +1,221 @@
+/* Main container with sidebar layout */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Social media links */
+.social-links {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    color: #666;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: #f8f9fa;
+    color: #007bff;
+    transform: translateX(3px);
+}
+
+.social-link svg {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover svg {
+    transform: scale(1.1);
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 300px;
+    background-color: #fff;
+    border-right: 1px solid #e0e0e0;
+    padding: 40px 30px;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Sidebar navigation */
+.sidebar-nav ul {
+    list-style: none;
+}
+
+.sidebar-nav li {
+    margin-bottom: 15px;
+}
+
+.sidebar-nav a {
+    display: block;
+    padding: 8px 0;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    border-left: 3px solid transparent;
+    padding-left: 15px;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav a.active {
+    color: #007bff;
+    border-left-color: #007bff;
+}
+
+.sidebar-nav a.nav-climbing {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Main content area */
+.main-content {
+    flex: 1;
+    margin-left: 300px;
+    padding: 40px;
+}
+
+.content-area {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Home page intro section */
+.intro {
+    margin-bottom: 60px;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Highlights section */
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* Page headers */
+.page-header {
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.page-header h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.page-header p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Current work section */
+.current-work {
+    margin-bottom: 40px;
+}
+
+.project-header {
+    padding: 5px 30px 20px 30px;
+}
+
+.project-header h3 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.project-status {
+    color: #888;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.project-details {
+    padding: 20px 30px 30px 30px;
+}
+
+.project-details h4 {
+    color: #333;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.project-details h4:first-child {
+    margin-top: 0;
+}
+
+.project-description p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.project-progress {
+    margin: 30px 0;
+}
+
+.project-goals ul {
+    color: #666;
+    margin-left: 20px;
+}
+
+.project-goals li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.project-links {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
