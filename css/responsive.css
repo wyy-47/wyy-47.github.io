@@ -121,6 +121,16 @@
     .profile-section {
         margin-bottom: 20px;
     }
+
+    .sidebar-nav a.nav-climbing {
+        margin-top: 0;
+        margin-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        border-top: 2px solid #e0e0e0;
+        border-left: none;
+    }
     
     .sidebar-nav ul {
         flex-direction: column;
