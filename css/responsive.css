@@ -2,6 +2,10 @@
     display: none;
 }
 
+.mobile-social-footer-home {
+    display: none;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     .container {
