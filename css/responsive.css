@@ -93,27 +93,50 @@
     /* Mobile footer social links */
     .mobile-social-footer {
         display: flex;
-        justify-content: center;
-        gap: 40px;
-        padding: 30px 20px;
-        margin-top: 40px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 20px;
+        margin-top: 20px;
         border-top: 1px solid #e0e0e0;
+        position: relative;
+    }
+
+    .mobile-social-footer .social-links {
+        display: flex;
+        gap: 40px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
     
     .mobile-social-footer .social-link {
+
         padding: 8px;
         color: #666;
         text-decoration: none;
         transition: color 0.3s ease;
+    } 
+
+    .mobile-social-footer .last-updated {
+        color: #888;
+        font-size: 0.75rem;
+        font-style: italic;
+        margin: 0;
+        margin-left: auto;
+        margin-top: auto;
     }
-    
-    .mobile-social-footer .social-link:hover {
-        color: #007bff;
-    }
-    
+
     .mobile-social-footer .social-link svg {
         width: 28px;
         height: 28px;
+    }
+
+    .mobile-social-footer .social-link:hover {
+        color: #007bff;
+    }
+
+    .desktop-footer {
+        display: none;
     }
 
     /* project cards */
@@ -157,5 +180,38 @@
     /* project cards */
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    /* Mobile footer social links */
+    .mobile-social-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 60px 15px 10px 15px;
+        margin-top: 20px;
+        border-top: 1px solid #e0e0e0;
+    }
+
+    .mobile-social-footer .social-links {
+        display: flex;
+        gap: 30px; /* Reduced from 40px */
+    }
+
+    .mobile-social-footer .social-link {
+        padding: 6px; /* Reduced padding */
+    }
+
+    .mobile-social-footer .social-link svg {
+        width: 24px; /* Reduced from 28px */
+        height: 24px; /* Reduced from 28px */
+    }
+
+    .mobile-social-footer .last-updated {
+        color: #888;
+        font-size: 0.7rem; /* Slightly smaller */
+        font-style: italic;
+        margin: 0;
+        text-align: center; /* Center the text */
     }
 }
