@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yiyi Wu - Resume</title>
+    <title>Yiyi Wu - CV</title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/resume.css">
 </head>
 <body>
     <div class="container">
@@ -17,9 +18,9 @@
             <nav class="sidebar-nav">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="current-work.html">Current Work</a></li>
+                    <li><a href="current.html">Current Work</a></li>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="resume.html" class="active">Resume</a></li>
+                    <li><a href="resume.html" class="active">CV</a></li>
                     <li><a href="climbing.html" class="nav-climbing">Climbing</a></li>
                 </ul>
             </nav>
@@ -40,12 +41,165 @@
 
         <main class="main-content">
             <div class="content-area">
-                <section class="page-header">
-                    <h2>Resume</h2>
-                    <p>Nothing yet :)</p>
+                <!-- CV Header -->
+                <!-- <header class="cv-header">
+                    <h1 class="cv-title">CV</h1>
+                    <p class="cv-date">July 28, 2025</p>
+                </header> -->
+                <header class="cv-header">
+                    <div class="cv-header-left">
+                        <h1 class="cv-title">CV</h1>
+                        <p class="cv-date">July 28, 2025</p>
+                    </div>
+                    <div class="cv-actions">
+                        <a href="../documents/Yiyi_Wu_Resume.pdf" target="_blank" class="view-resume-btn">View Resume</a>
+                    </div>
+                </header>
+
+                <!-- Objective Section -->
+                <section class="cv-section">
+                    <h2 class="section-title">Objective</h2>
+                    <p class="objective-text">
+                        Seeking an entry-level Engineer position to apply a strong foundation in robotics, AI/NLP/CV, analytical mathematics, and hands-on problem-solving to the integration and verification of product systems, contributing to the delivery of quality, integrated solutions in a collaborative, team-oriented environment.
+                    </p>
+                    <p class="objective-text">
+                        My Waldorf education developed my teamwork, hands-on skills, and interdisciplinary knowledge, enabling effective collaboration and cross-disciplinary integration.
+                    </p>
                 </section>
 
-                <!-- Add your climbing content here -->
+                <!-- Education Section -->
+                <section class="cv-section">
+                    <h2 class="section-title">Education</h2>
+                    
+                    <div class="cv-item">
+                        <div class="cv-date-range">2023-05 to 2025-05</div>
+                        <div class="cv-content">
+                            <div class="cv-title-line">Master of Science in Robotics Engineering, Worcester Polytechnic Institute</div>
+                            <div class="cv-subtitle">GPA: 3.87/4.0 | Worcester, MA</div>
+                        </div>
+                    </div>
+
+                    <div class="cv-item">
+                        <div class="cv-date-range">2019-08 to 2023-05</div>
+                        <div class="cv-content">
+                            <div class="cv-title-line">Bachelor of Science in Mathematical Sciences and Robotics Engineering</div>
+                            <div class="cv-subtitle">GPA: 3.5/4.0 | Worcester Polytechnic Institute, Worcester, MA</div>
+                            <div class="cv-description">
+                                <strong>Relevant Coursework:</strong> Robot Dynamics Modeling, Robotic Arm with Real-time and Vision Based Control, AR adaptation of ultrasound guidance based on project mapping, Project Management
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Experience Section -->
+                <section class="cv-section">
+                    <h2 class="section-title">Experience</h2>
+                    
+                    <div class="cv-item">
+                        <div class="cv-date-range">2025-06 to present</div>
+                        <div class="cv-content">
+                            <div class="cv-title-line">Research Assistant, RoboCare Lab</div>
+                            <div class="cv-subtitle">Worcester Polytechnic Institute, Worcester, MA</div>
+                            <div class="cv-description">
+                                <ul>
+                                    <li>Serving as a Research Assistant at the RoboCare Lab, focus on the development of Nao robot and support various lab operations, advancing research in social robotics and health applications.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cv-item">
+                        <div class="cv-date-range">2024-06 to 2024-08</div>
+                        <div class="cv-content">
+                            <div class="cv-title-line">Recommender System Engineer Intern, Tencent Holdings Ltd.</div>
+                            <div class="cv-subtitle">Guangzhou, China</div>
+                            <div class="cv-description">
+                                <ul>
+                                    <li>Improved recommender systems by optimizing recall, ranking, and sorting.</li>
+                                    <li>Extracted and utilized key feed features: follower count, age, and gender, from FKV tables to train models.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Leadership Section -->
+                <section class="cv-section">
+                    <h2 class="section-title">Leadership</h2>
+                    
+                    <div class="cv-item">
+                        <div class="cv-date-range">2021-05 to 2023-05</div>
+                        <div class="cv-content">
+                            <div class="cv-title-line">Vice President and Treasurer, Chinese Student and Scholar Association</div>
+                            <div class="cv-subtitle">Worcester Polytechnic Institute</div>
+                        </div>
+                    </div>
+
+                    <div class="cv-item">
+                        <div class="cv-date-range">2020-11 to 2021-12</div>
+                        <div class="cv-content">
+                            <div class="cv-title-line">Equipment Manager, Rugby Club</div>
+                            <div class="cv-subtitle">Worcester Polytechnic Institute</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Technical Skills Section -->
+                <section class="cv-section">
+                    <h2 class="section-title">Technical Skills</h2>
+                    
+                    <div class="skills-section">
+                        <div class="skill-category">
+                            <h4>Programming Languages</h4>
+                            <div class="skill-list">MATLAB, Java, Python, C&C++, Arduino, SQL, R, ROS 2</div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Software</h4>
+                            <div class="skill-list">MATLAB, SolidWorks, Excel, PowerPoint, COMSOL, Adobe Photoshop, Premiere Pro, Gazebo</div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Operational</h4>
+                            <div class="skill-list">3D printing, Laser cutter, Soldering, Mechanical works</div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Languages</h4>
+                            <div class="skill-list">Chinese (Mandarin, native), English (fluent)</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Publications Section -->
+                <section class="cv-section">
+                    <h2 class="section-title">Publications</h2>
+                    
+                    <div class="publication-item">
+                        <div class="publication-title">A Progressive Multimodal Robot System for Emotional Learning in Autistic Children</div>
+                        <div class="publication-authors">Y. Wu, M. Kaur, and F. Yuan</div>
+                        <div class="publication-venue">in Proceedings of ICSR, Napoli, Italy, 2025, accepted.</div>
+                    </div>
+                </section>
+
+                <!-- Download Section -->
+                <!-- <section class="download-section">
+                    <a href="../documents/Yiyi_Wu_CV.pdf" class="download-btn" target="_blank">Download PDF CV</a>
+                </section> -->
+            </div>
+
+            <!-- Mobile Social Footer -->
+            <div class="mobile-social-footer">
+                <a href="https://instagram.com/yiyi_47" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.40s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/yiyi-wu-374027234/" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </a>
             </div>
         </main>
     </div>
