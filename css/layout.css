@@ -132,6 +132,11 @@
     color: #666;
     line-height: 1.8;
 }
+.smaller-text {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 10px;
+}
 
 /* Highlights section */
 .highlights {

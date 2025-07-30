@@ -67,21 +67,27 @@
                         <div class="project-details">
                             <div class="project-description">
                                 <h4>Project Overview</h4>
-                                <p>The ultimate goal of this project is to deploy Nao (or other humanoid robot) to conduct therapeutic session with Autism kids through movements. Now we focus on emotion learning. </p>
-                                <p>Each learning session will contain 4 emotions, and 5 games. We wanted to make each section of the session fun and game like, with verbal rewards from Nao. 
-                                    The 5 games are progressive, gradually increase interaction complexity, using multimodal cues (verbal, facial, bodily). </p>
-                            </div>
+                                <p>A social robotic system using a NAO robot for emotion education in children with autism spectrum disorder (ASD). The system integrates a NAO robot with a dual-interface architecture: one interface displays emotional stimuli for the child, while the other is a Graphical User Interface (GUI) for a human facilitator. This design balances the robot's autonomous operation with essential human oversight.</p>
+                                <p>The therapeutic approach is based on a five-activity framework that incrementally increases the complexity of interactions. A session target four core emotions—happy, sad, surprised, and angry—through multimodal exchanges that include verbal, facial, bodily, and contextual emotional cues.</p>
 
-                            <figure class="inline-figure">
-                                <img src="../images/nao-sys.png" alt="system overview" class="inline-image">
-                                <figcaption class="figure-caption">system overview</figcaption>
-                            </figure>
+                                <figure class="inline-figure">
+                                    <img src="../images/nao-sys2.png" alt="system overview" class="inline-image">
+                                    <figcaption class="figure-caption">Figure1. System architecture</figcaption>
+                                </figure>
+
+                                <p>The system leverages several advanced technologies to facilitate these activities. ChatGPT/Whisper is used for adaptive conversation, while DeepFace is employed for facial emotion analysis. MediaPipe is used for real-time body pose recognition by monitoring key anatomical landmarks on the child. A critical component is the bespoke GUI for the facilitator, which offers granular control to initiate, repeat, or omit any part of the session, enabling tailored pacing for children with ASD who often benefit from repeated exposure to concepts.</p>
+                                <figure class="inline-figure">
+                                    <img src="../images/nao-3.png" alt="GUi" class="inline-image">
+                                    <figcaption class="figure-caption">Figure2. GUI for the facilitator</figcaption>
+                                </figure>
+                            </div>
 
                             <!-- <img src="../images/nao-sys.png" alt="Project image 2" class="inline-image"> -->
 
                             <div class="project-goals">
                                 <h4>Work in Progress</h4>
                                 <ul>
+                                    <li>Start & stop recording button</li>
                                     <li>Smoother transition between games</li>
                                     <li>Story Interaction</li>
                                 </ul>
